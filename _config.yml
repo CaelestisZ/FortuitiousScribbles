@@ -1,19 +1,15 @@
-name: Your New Jekyll Site
-description: Blogging about stuffs
-meta_description: "Your New Jekyll Site, Blogging about stuffs"
+name: Fortuitious Scribbles
+meta_description: "Niranjan's Blog"
 
 markdown: kramdown
 highlighter: rouge
-logo: false
+logo: true
 paginate: 15
-baseurl: /kasper
-domain_name: "http://yourblog-domain.com"
+baseurl: ""
+domain_name: ""
 google_analytics: "UA-XXXXXXXX-X"
 plugins: [jekyll-paginate]
 
 # Details for the RSS feed generator
-url: ""
-author: "Your Name"
-
-# Disqus config
-disqus-shortname: ""
+author_url: "https://niranjan-dev-portfolio.now.sh"
+author: "CaelestisZ"

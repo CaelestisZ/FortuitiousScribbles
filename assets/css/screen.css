@@ -476,7 +476,6 @@ margin on the iframe, cause it breaks stuff. */
     height: 100%;
     margin-bottom: 5rem;
     text-align: center;
-    background: #222 no-repeat center center;
     background-size: cover;
     overflow: hidden;
 }
@@ -720,7 +719,6 @@ margin on the iframe, cause it breaks stuff. */
     max-width: 710px;
     margin: 4rem auto;
     padding-bottom: 4rem;
-    border-bottom: #EBF2F6 1px solid;
     word-break: break-word;
     hyphens: auto;
 }
@@ -903,18 +901,19 @@ body:not(.post-template) .post-title {
 .post-footer {
     position: relative;
     margin: 6rem 0 0 0;
+    text-align: center;
     padding: 6rem 0 0 0;
     border-top: #EBF2F6 1px solid;
 }
 
 .post-footer h4 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin: 0;
 }
 
 .post-footer p {
     margin: 1rem 0;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     line-height: 1.75em;
 }
 
@@ -936,10 +935,6 @@ body:not(.post-template) .post-title {
     color: #111;
 }
 
-/* Create some space to the right for the share links */
-.post-footer .author {
-    margin-right: 180px;
-}
 
 .post-footer h4 a {
     color: #2e2e2e;
