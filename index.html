@@ -5,14 +5,7 @@ cover: false
 ---
 
 <header class="main-header {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
-    <nav class="main-nav overlay clearfix">
-            {% if page.logo %}
-                <a class="blog-logo" href="{{ site.baseurl }}">
-                    <img src="{{ page.logo }}" alt="Blog Logo" />
-                </a>
-            {% endif %}
-    </nav>
-    <div class="vertical">
+    <div class="vertical py-6">
         <div class="main-header-content inner">
             <h1 class="page-title">{{ site.name }}</h1>
         </div>
@@ -23,6 +16,28 @@ cover: false
 
 <main id="content" class="content" role="main">
 
+    <div class="tabs is-toggle is-toggle-rounded is-centered" style="display: none;">
+        <ul>
+          <li class="is-active">
+            <a>
+              <span class="icon is-small"><i class="fas fa-image"></i></span>
+              <span>All</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <span class="icon is-small"><i class="fas fa-music"></i></span>
+              <span>Tech</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <span class="icon is-small"><i class="fas fa-film"></i></span>
+              <span>Random</span>
+            </a>
+          </li>
+        </ul>
+    </div>
 
     <div class="extra-pagination inner">
         {% include pagination.html %}
@@ -30,7 +45,7 @@ cover: false
 
     {% for post in paginator.posts %}
 
-    <article class="post">
+    <article class="post px-6 py-2">
         <header class="post-header">
             <h2 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
         </header>
@@ -45,20 +60,5 @@ cover: false
     </article>
 
     {% endfor %}
-
-    <footer class="post-footer">
-        <!-- If we want to display author's name and bio -->
-        {% if site.author %}
-            <figure class="author-image">
-                <a class="img" style="background-image: url({{'/assets/images/profile.jpg' | relative_url}})">
-                <span class="hidden">{{site.author}}'s Picture</span></a>
-            </figure>
-            <section class="author">
-                <!-- Author Name -->
-                <h4><a href={{site.author_url}}> {{ site.author }} </a></h4>
-            </section>
-        {% endif %}
-
-    </footer>
 
 </main>

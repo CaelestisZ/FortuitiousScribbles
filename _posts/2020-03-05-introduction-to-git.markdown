@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "An Introduction to Git"
+title:  "Introduction to Git"
 date:   2020-03-05 10:18:00
 ---
 
