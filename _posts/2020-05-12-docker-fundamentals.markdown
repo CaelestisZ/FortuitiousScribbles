@@ -4,9 +4,8 @@ title:  "Docker Fundamentals"
 date:   2020-05-12 10:18:00
 ---
 
-### What is Docker?
-
-Docker is a set of tools that allow us to easily execute containers and containerised applications.
+Docker is a set of tools that allow us to easily create, deploy, and execute applications using containers. In a very basic sense, containers allow users 
+to bundle up an application with all of pieces it needs, including libraries and other dependencies and further deploy it as a single package.
 
 ### Why Docker?
 
@@ -29,7 +28,7 @@ Docker makes this a lot easier. Typically, these containers are light-weight and
 
 ### The Docker Workflow: Basics
 
-![Docker Workflow](/Notes/assets/docker-intro.png)
+![Docker Workflow](/assets/images/docker-3intro.png)
 
 ##### View all containers running on Docker's host
 
