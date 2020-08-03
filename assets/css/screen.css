@@ -98,7 +98,14 @@ input::-moz-focus-inner { border: 0; padding: 0; }
 textarea { overflow: auto; vertical-align: top; }
 table { border-collapse: collapse; border-spacing: 0; }
 
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  border-left: 1px solid #E6ECF8; }
 
+::-webkit-scrollbar-thumb {
+  background-color: #000; }
+ 
 /* ==========================================================================
    1. Icons - Sets up the icon font and respective classes
    ========================================================================== */
