@@ -11,5 +11,5 @@ google_analytics: "UA-XXXXXXXX-X"
 plugins: [jekyll-paginate]
 
 # Details for the RSS feed generator
-author_url: "https://niranjan-dev-portfolio.now.sh"
+author_url: "https://caelestisz.now.sh"
 author: "Niranjan"
