@@ -5,8 +5,8 @@
   "main": "_sass/_bulma.scss",
   "scripts": {
     "css-build": "node-sass --omit-source-map-url _sass/_bulma.scss assets/css/bulma.css",
-	"css-watch": "npm run css-build -- --watch",
-	"start": "npm run css-watch"
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
   },
   "repository": {
     "type": "git",
