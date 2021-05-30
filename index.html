@@ -4,61 +4,64 @@ title: Home
 cover: false
 ---
 
-<header class="main-header {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
-    <div class="vertical py-6">
-        <div class="main-header-content inner">
-            <h1 class="page-title">{{ site.name }}</h1>
-        </div>
+<meta name="google-site-verification" content="gqZmxSiK34tykOaehvShvA6W3YZAfMWlGq30coMlwu8" />
+
+<header class="main-header {% if page.cover %}"
+  style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
+  <div class="vertical py-6">
+    <div class="main-header-content inner">
+      <h1 class="page-title">{{ site.name }}</h1>
     </div>
-    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
+  </div>
+  <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
 </header>
 
 
 <main id="content" class="content" role="main">
 
-    <div class="tabs is-toggle is-toggle-rounded is-centered" style="display: none;">
-        <ul>
-          <li class="is-active">
-            <a>
-              <span class="icon is-small"><i class="fas fa-image"></i></span>
-              <span>All</span>
-            </a>
-          </li>
-          <li>
-            <a>
-              <span class="icon is-small"><i class="fas fa-music"></i></span>
-              <span>Tech</span>
-            </a>
-          </li>
-          <li>
-            <a>
-              <span class="icon is-small"><i class="fas fa-film"></i></span>
-              <span>Random</span>
-            </a>
-          </li>
-        </ul>
-    </div>
+  <div class="tabs is-toggle is-toggle-rounded is-centered" style="display: none;">
+    <ul>
+      <li class="is-active">
+        <a>
+          <span class="icon is-small"><i class="fas fa-image"></i></span>
+          <span>All</span>
+        </a>
+      </li>
+      <li>
+        <a>
+          <span class="icon is-small"><i class="fas fa-music"></i></span>
+          <span>Tech</span>
+        </a>
+      </li>
+      <li>
+        <a>
+          <span class="icon is-small"><i class="fas fa-film"></i></span>
+          <span>Random</span>
+        </a>
+      </li>
+    </ul>
+  </div>
 
-    <div class="extra-pagination inner">
-        {% include pagination.html %}
-    </div>
+  <div class="extra-pagination inner">
+    {% include pagination.html %}
+  </div>
 
-    {% for post in paginator.posts %}
+  {% for post in paginator.posts %}
 
-    <article class="post px-6 py-2">
-        <header class="post-header">
-            <h2 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-        </header>
-        <section class="post-excerpt">
-            {{ post.excerpt }} <a class="read-more" href="{{ post.url | relative_url }}">&raquo;</a>
-        </section>
-        <footer class="post-meta">
-            <time class="post-date" datetime="{{ post.date | date:"%Y-%m-%d" }}">
-                {{ post.date | date_to_string }}
-            </time> 
-        </footer>
-    </article>
+  <article class="post px-6 py-2">
+    <header class="post-header">
+      <h2 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    </header>
+    <section class="post-excerpt">
+      {{ post.excerpt }} <a class="read-more" href="{{ post.url | relative_url }}">&raquo;</a>
+    </section>
+    <footer class="post-meta">
+      <time class="post-date" datetime="{{ post.date | date:"%Y-%m-%d" }}">
+        {{ post.date | date_to_string }}
+      </time>
+    </footer>
+  </article>
 
-    {% endfor %}
+  {% endfor %}
 
 </main>
