@@ -1,5 +1,8 @@
 source "https://rubygems.org"
 
+# Pin ffi for Ruby 2.6 compatibility (ffi >= 1.17 requires Ruby 3.0+)
+gem "ffi", "1.15.5"
+
 gem "jekyll", "~> 3.8.6"
 
 gem 'jekyll-paginate'
