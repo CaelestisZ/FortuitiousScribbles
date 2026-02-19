@@ -1,9 +1,10 @@
 source "https://rubygems.org"
 
-# Pin ffi for Ruby 2.6 compatibility (ffi >= 1.17 requires Ruby 3.0+)
-gem "ffi", "1.15.5"
+# Pin ffi for Ruby 2.6 compatibility locally; Ruby 3.x (e.g. Vercel) can use 1.17+
+gem "ffi", ">= 1.15.5"
 
-gem "jekyll", "~> 3.8.6"
+gem "jekyll", "~> 4.3"
+gem "kramdown", "~> 2.4"
 
 gem 'jekyll-paginate'
 
